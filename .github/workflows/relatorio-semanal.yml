@@ -21,17 +21,26 @@ jobs:
       - name: Baixar o repositório
         uses: actions/checkout@v4
 
+      - name: Definir data de hoje
+        run: echo "HOJE=$(TZ=America/Sao_Paulo date +%F)" >> "$GITHUB_ENV"
+
       - name: Gerar relatório com Claude
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          show_full_output: true
           prompt: |
-            Hoje é ${{ github.run_started_at }} (UTC). Leia o arquivo prompts/relatorio_semanal.md
-            e siga TODAS as instruções dele à risca para gerar o relatório desta semana.
+            Hoje é ${{ env.HOJE }}. Leia o arquivo prompts/relatorio_semanal.md e siga TODAS as instruções dele
+            para gerar o relatório desta semana.
+            Regras de execução (obrigatórias):
+            - Salve o relatório EXATAMENTE em: relatorios/relatorio_${{ env.HOJE }}.md (use a ferramenta Write).
+            - Para ler arquivos use Read/Glob/Grep; para pesquisar use WebSearch/WebFetch. Não use Bash para nada além de ls e date.
+            - Se uma ferramenta ou site for negado/bloqueado, siga com outra fonte e registre a lacuna. NUNCA encerre sem salvar o arquivo.
+            - Se o tempo ou os passos estiverem acabando, salve o que tiver (marcando N/D nas lacunas) antes de terminar.
           claude_args: |
-            --allowedTools "WebSearch,WebFetch,Read,Write,Edit,Glob,Grep,Bash(ls:*),Bash(date:*)"
-            --max-turns 120
+            --allowedTools "WebSearch,WebFetch,Read,Write,Edit,Glob,Grep,Bash(ls:*),Bash(date:*),Bash(mkdir:*)"
+            --max-turns 150
 
       - name: Guardar cópia do relatório (backup)
         if: always()
@@ -50,6 +59,6 @@ jobs:
             echo "::error::Nenhum relatório novo foi gerado em relatorios/"
             exit 1
           fi
-          git commit -m "relatorio: $(date -u +%F)"
+          git commit -m "relatorio: ${HOJE}"
           git pull --rebase origin main
           git push
