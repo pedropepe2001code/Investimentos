@@ -8,11 +8,14 @@ Pense como dono do dinheiro: o objetivo é maximizar retorno **real, líquido de
 ## Arquivos deste repositório
 | Arquivo | O que é | Quem edita |
 |---|---|---|
-| `perfil.md` | Horizonte, tolerância a risco, restrições e **alocação-alvo** por classe | Pedro |
-| `carteira.md` | Posição atual por classe/instrumento (em %) | Pedro (com ajuda sua após cada decisão) |
+| `perfil.md` | Horizonte, tolerância a risco, restrições e **alocação-alvo** por classe — **local, fora do git** | Pedro |
+| `carteira.md` | Posição atual por classe/instrumento (em %) — **local, fora do git** | Pedro (com ajuda sua após cada decisão) |
 | `relatorios/relatorio_AAAA-MM-DD.md` | Relatório macro/mercados semanal, gerado automaticamente | Tarefa agendada — **nunca edite** |
-| `decisoes.md` | Diário de decisões: o que, por quê, com base em qual relatório | Você, após confirmação do Pedro |
+| `decisoes.md` | Diário de decisões: o que, por quê, com base em qual relatório — **local, fora do git** | Você, após confirmação do Pedro |
 | `prompts/relatorio_semanal.md` | Prompt da tarefa agendada (cópia versionada) | Pedro |
+| `modelos/` | Modelos em branco de `perfil.md`, `carteira.md` e `decisoes.md` | Pedro |
+
+O repositório é **público**. `perfil.md`, `carteira.md` e `decisoes.md` estão no `.gitignore`: atualize e salve esses arquivos normalmente, mas **nunca** faça `git add`, commit ou push deles.
 
 ## Rotina de início de toda sessão
 1. Rode `git pull` antes de qualquer coisa.
@@ -61,15 +64,16 @@ Para perguntas rápidas ("o que mudou essa semana?"), responda curto: 5 bullets 
 - O usuário pode desligar com "modo aprendiz off".
 
 ## Registro de decisões
-Depois que o Pedro confirmar uma decisão, adicione ao fim de `decisoes.md` no formato do modelo daquele arquivo, atualize `carteira.md` se ele informar a execução, e faça commit + push com mensagem `decisao: AAAA-MM-DD <resumo>`.
+Depois que o Pedro confirmar uma decisão, adicione ao fim de `decisoes.md` no formato do modelo daquele arquivo, e atualize `carteira.md` se ele informar a execução. Só salve os arquivos localmente — sem commit nem push.
 
 ## Revisão periódica
 Quando o Pedro pedir revisão (sugestão: trimestral), compare as decisões registradas com o que aconteceu depois: o racional se confirmou? Os erros vieram de dado ruim no relatório ou de análise ruim? Proponha ajustes em `perfil.md` ou no prompt do relatório.
 
 ## Git
-- Sempre `git pull` no início e `git push` ao final de qualquer alteração.
+- No início da sessão, rode só `git pull` (para receber relatórios novos).
+- Não faça push de nada, a menos que o Pedro peça explicitamente para alterar arquivos compartilhados (`CLAUDE.md`, `prompts/`, `modelos/`, `.github/workflows/`).
+- Nunca faça `git add`, commit ou push de `perfil.md`, `carteira.md` ou `decisoes.md`.
 - Nunca edite arquivos em `relatorios/`.
-- Se houver conflito em `carteira.md`, mostre as duas versões e pergunte qual vale.
 
 ## Aviso
 Isto é apoio à decisão pessoal, não recomendação de investimento profissional. A decisão final e a execução são do Pedro.
