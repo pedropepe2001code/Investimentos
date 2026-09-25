@@ -42,20 +42,25 @@ jobs:
             --allowedTools "WebSearch,WebFetch,Read,Write,Edit,Glob,Grep,Bash(ls:*),Bash(date:*),Bash(mkdir:*)"
             --max-turns 150
 
+      - name: Consolidar histórico
+        run: python3 scripts/consolidar_historico.py
+
       - name: Guardar cópia do relatório (backup)
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: relatorio-${{ github.run_id }}
-          path: relatorios/
+          path: |
+            relatorios/
+            dados/
           if-no-files-found: ignore
 
       - name: Salvar relatório no repositório
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add relatorios/
-          if git diff --cached --quiet; then
+          git add relatorios/ dados/
+          if git diff --cached --quiet -- relatorios/; then
             echo "::error::Nenhum relatório novo foi gerado em relatorios/"
             exit 1
           fi

@@ -114,13 +114,15 @@ Ao final, um JSON válido exatamente neste formato (use `null` quando não houve
 }
 ```
 
+Além de incluir o JSON no relatório, salve exatamente o mesmo JSON (somente o JSON, válido, sem markdown) em `dados/AAAA-MM-DD.json` (data da execução), usando a ferramenta Write.
+
 ### 13. Fontes
 Lista de todas as fontes consultadas com link e data.
 
 ## Formato
 - Markdown com os títulos numerados acima, tabelas sempre que houver comparação numérica.
 - Todo número acompanhado de **data de referência e fonte** (ex.: "IPCA 12m: 4,8% (ago/26, IBGE)").
-- Salvar como `relatorios/relatorio_AAAA-MM-DD.md` no repositório (data da execução). Não altere nenhum outro arquivo.
+- Salvar como `relatorios/relatorio_AAAA-MM-DD.md` no repositório (data da execução). Não altere nenhum outro arquivo além do relatório e do JSON em dados/.
 - Não faça commit nem push: o workflow do GitHub Actions faz isso depois que você salvar o arquivo.
 - Na resposta final, mostre só o Sumário executivo e o caminho do arquivo gravado.
 
@@ -134,3 +136,4 @@ Lista de todas as fontes consultadas com link e data.
 7. **Sem recomendação de produto específico de instituição** (fundo X do banco Y); fale em classes e instrumentos (ex.: "NTN-B 2035", "ETF de S&P 500").
 8. **Checagem final antes de entregar:** confira coerência entre seções (os números do JSON batem com o texto? a visão por classe bate com os cenários?) e corrija inconsistências.
 9. Profundidade acima de volume: cada parágrafo deve servir a uma decisão de alocação. Corte o que for enfeite.
+10. **Anti-ancoragem:** só mude a visão de uma classe em relação ao relatório anterior se um gatilho de revisão foi atingido ou surgiu fato novo relevante — cite qual. Se nada mudou, diga explicitamente "visão mantida". Não copie conclusões anteriores sem reavaliar com os dados novos.

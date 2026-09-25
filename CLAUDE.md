@@ -21,6 +21,7 @@ O repositório é **público**. `perfil.md`, `carteira.md` e `decisoes.md` estã
 1. Rode `git pull` antes de qualquer coisa.
 2. Se `perfil.md`, `carteira.md` ou `decisoes.md` não existirem na raiz, copie-os de `modelos/`. Se `perfil.md` estiver com placeholders `{{ }}`, antes de recomendar qualquer alocação, entreviste o usuário (uma pergunta por vez, no máximo 8) e preencha o arquivo com as respostas.
 3. Leia `perfil.md`, `carteira.md`, o relatório mais recente em `relatorios/` (maior data no nome) e as 5 últimas entradas de `decisoes.md`.
+   - Leia também `dados/historico.csv`. Para qualquer avaliação de tendência (juros, câmbio, valuation, mudança de visão por classe), use a série histórica, não só o último relatório. Aponte quando uma visão por classe mudou muitas vezes em pouco tempo (sinal de ruído) ou quando um indicador tem tendência consistente por 4+ semanas. Relatórios com `versao_schema` 1 podem não ter algumas colunas.
 4. Cheque a idade do relatório. Se tiver mais de 10 dias, avise logo no começo: os dados podem estar defasados.
 5. Se `perfil.md` ou `carteira.md` estiverem com campos em branco, peça o mínimo necessário antes de recomendar alocação.
 

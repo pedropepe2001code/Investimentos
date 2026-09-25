@@ -1,0 +1,190 @@
+{
+  "data_referencia": "2026-09-23",
+  "regime_mercado": "Juro real brasileiro perto da máxima de 15 anos, em ciclo de corte de Selic ainda em curso, convivendo com Fed/BCE/BoJ subindo juros simultaneamente, dólar global mais forte, petróleo em alta por guerra no Oriente Médio e eleição presidencial brasileira concentrando risco nas próximas semanas",
+  "brasil": {
+    "selic": 13.75,
+    "ipca_12m": 4.22,
+    "focus_ipca_ano": 4.92,
+    "focus_selic_fim_ano": 13.5,
+    "ntnb_longa_real": 7.22,
+    "di_1ano": null,
+    "di_5anos": null,
+    "usdbrl": 5.1414,
+    "divida_bruta_pib": 82.5,
+    "ibovespa": 187422.92,
+    "ibov_pl_proj": null,
+    "ifix": 3746,
+    "ifix_dy": null
+  },
+  "global": {
+    "fed_funds": 3.875,
+    "cpi_eua_12m": 3.4,
+    "treasury_10y": 4.96,
+    "tips_10y": 2.62,
+    "dxy": null,
+    "sp500": 7764.7,
+    "sp500_pl_fwd": 19.26,
+    "brent": null,
+    "ouro": null,
+    "btc_usd": 84028.58
+  },
+  "visao_classes": [
+    {
+      "classe": "Renda fixa pós-fixada",
+      "visao": "sobrepeso",
+      "conviccao": "alta",
+      "horizonte": "curto-médio",
+      "racional": "Juro real ~8,3% a.a., ainda muito alto embora em queda",
+      "gatilho_revisao": "Selic abaixo de 11% no Focus"
+    },
+    {
+      "classe": "Prefixados",
+      "visao": "neutro",
+      "conviccao": "media",
+      "horizonte": "médio",
+      "racional": "Prêmio sobre Selic esperada, mas marcação sensível ao ruído eleitoral",
+      "gatilho_revisao": "Resultado eleitoral ou mudança abrupta na curva"
+    },
+    {
+      "classe": "IPCA+ (NTN-B)",
+      "visao": "sobrepeso",
+      "conviccao": "alta",
+      "horizonte": "longo",
+      "racional": "Juro real perto da máxima de 15 anos",
+      "gatilho_revisao": "Queda sustentada do juro real para abaixo de 6%"
+    },
+    {
+      "classe": "Crédito privado",
+      "visao": "subpeso",
+      "conviccao": "media",
+      "horizonte": "curto-médio",
+      "racional": "Spread não compensa risco recente de calotes/rebaixamentos (Braskem, Raízen)",
+      "gatilho_revisao": "Normalização de spreads e fim do ciclo de rebaixamentos"
+    },
+    {
+      "classe": "Ações Brasil",
+      "visao": "neutro",
+      "conviccao": "media",
+      "horizonte": "médio-longo",
+      "racional": "Prêmio de risco vs NTN-B comprimido (200-350bps), risco eleitoral concentrado à frente",
+      "gatilho_revisao": "Definição eleitoral e CDS sustentado abaixo de 100pb"
+    },
+    {
+      "classe": "FIIs",
+      "visao": "subpeso",
+      "conviccao": "baixa",
+      "horizonte": "médio",
+      "racional": "Spread vs NTN-B comprimido, vacância de lajes subindo com oferta recorde",
+      "gatilho_revisao": "Reabertura do spread FII-NTN-B"
+    },
+    {
+      "classe": "Ações globais",
+      "visao": "subpeso",
+      "conviccao": "media",
+      "horizonte": "curto-médio",
+      "racional": "Valuation esticada (CAPE 2º maior em 150 anos), Fed subindo juros",
+      "gatilho_revisao": "Correção de múltiplos ou pausa clara do Fed"
+    },
+    {
+      "classe": "Cripto",
+      "visao": "neutro",
+      "conviccao": "baixa",
+      "horizonte": "longo",
+      "racional": "Alta volatilidade, 33% abaixo do topo histórico, fluxo de ETF sem direção clara",
+      "gatilho_revisao": "Reversão consistente de fluxo de ETF"
+    },
+    {
+      "classe": "Ouro/dólar (proteção)",
+      "visao": "sobrepeso",
+      "conviccao": "media",
+      "horizonte": "longo",
+      "racional": "Tese estrutural de fiscal EUA e compras recordes de bancos centrais intacta",
+      "gatilho_revisao": "Reversão das compras de ouro por bancos centrais"
+    }
+  ],
+  "cenarios": [
+    {
+      "nome": "base",
+      "probabilidade": 0.5,
+      "resumo": "Corte gradual da Selic, IPCA perto do teto da banda, câmbio estável, Fed sobe mais uma vez e pausa, eleição sem ruptura institucional"
+    },
+    {
+      "nome": "otimista",
+      "probabilidade": 0.2,
+      "resumo": "Definição eleitoral favorável ao fiscal, CDS cai mais, Selic corta mais rápido, real aprecia, Ibovespa reprecifica, conflito no Oriente Médio arrefece"
+    },
+    {
+      "nome": "pessimista",
+      "probabilidade": 0.3,
+      "resumo": "Eleição contestada ou fiscal piora, dívida/PIB acelera, meta 2026 descumprida, Selic para de cair, câmbio deprecia forte, Fed mais hawkish, petróleo sobe mais"
+    }
+  ],
+  "riscos_principais": [
+    "Risco eleitoral concentrado (1º turno 04/10, possível 2º turno 25/10)",
+    "Deterioração fiscal (dívida/PIB em alta, meta 2026 sob risco)",
+    "Fed mais hawkish que o precificado",
+    "Escalada do conflito no Oriente Médio pressionando petróleo/inflação",
+    "Deterioração de crédito privado (calotes e rebaixamentos recentes)",
+    "Ruptura institucional pós-eleitoral (cauda)",
+    "Desmonte desordenado do carry trade do iene (cauda)"
+  ],
+  "eventos_proximos_30d": [
+    {
+      "data": "2026-09-25",
+      "evento": "IPCA-15 (set/26)",
+      "impacto": "medio"
+    },
+    {
+      "data": "2026-10-02",
+      "evento": "Payroll EUA (set/26)",
+      "impacto": "alto"
+    },
+    {
+      "data": "2026-10-04",
+      "evento": "Eleições Brasil - 1o turno",
+      "impacto": "alto"
+    },
+    {
+      "data": "2026-10-07",
+      "evento": "Ata do FOMC (reuniao 16/09)",
+      "impacto": "medio"
+    },
+    {
+      "data": "2026-10-09",
+      "evento": "IPCA cheio (set/26)",
+      "impacto": "alto"
+    },
+    {
+      "data": "2026-10-14",
+      "evento": "CPI EUA (set/26)",
+      "impacto": "alto"
+    },
+    {
+      "data": "2026-10-14",
+      "evento": "Vencimento de opcoes sobre Ibovespa - B3",
+      "impacto": "baixo"
+    }
+  ],
+  "mudancas_vs_anterior": [
+    "primeira execução"
+  ],
+  "lacunas_de_dados": [
+    "DI futuro por vértice (jan/27, jan/29, jan/31) na sessão atual",
+    "Preço exato do Brent (dispersão US$96-113 entre fontes)",
+    "Preço exato do ouro (dispersão US$4.278-4.461 entre fontes)",
+    "DXY exato (dispersão 100,7-101,2)",
+    "P/L forward do Ibovespa (faixa 9,0x-10,4x, não ponto único)",
+    "Variação do Ibovespa em 12 meses",
+    "Variação do IFIX no ano (fontes conflitantes)",
+    "Peso exato do Magnificent 7 no S&P 500 (faixa 30%-35%)",
+    "Crescimento de EPS do S&P 500 (fonte com inconsistência interna)",
+    "Número mínimo de cotistas para isenção de IR em FIIs (50 ou 100)",
+    "Massa salarial real no Brasil",
+    "Concessões de crédito PF/PJ de agosto/2026",
+    "Nível exato do USD/JPY",
+    "Fluxo de capital para emergentes em setembro/2026",
+    "ERP de Damodaran atualizado (dado disponível é de jan/2026)",
+    "IBC-Br de agosto/2026",
+    "Spread numérico específico de CRI/CRA sobre CDI/NTN-B"
+  ]
+}
