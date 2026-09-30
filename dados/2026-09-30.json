@@ -1,0 +1,75 @@
+{
+  "data_referencia": "2026-09-30",
+  "regime_mercado": "Juro real brasileiro perto da máxima de 15 anos com Selic em ciclo de corte, mas com IPCA-15 de setembro surpreendendo para cima (4,47% em 12m); Fed/BCE/BoJ em aperto, Treasury 30 anos acima de 5,5% (máxima desde 2002), petróleo acima de US$100 e 1º turno da eleição presidencial brasileira em 04/10",
+  "brasil": {
+    "selic": 13.75, "ipca_12m": 4.22, "focus_ipca_ano": 4.99, "focus_selic_fim_ano": 13.50,
+    "ntnb_longa_real": 7.13, "di_1ano": null, "di_5anos": null,
+    "usdbrl": 5.217, "divida_bruta_pib": 82.5, "ibovespa": 183827.59, "ibov_pl_proj": null,
+    "ifix": 3737.17, "ifix_dy": null
+  },
+  "global": {
+    "fed_funds": 3.875, "cpi_eua_12m": 3.4, "treasury_10y": 5.24, "tips_10y": null,
+    "dxy": 101.26, "sp500": 7670.84, "sp500_pl_fwd": null, "brent": 102.59, "ouro": 4179.70, "btc_usd": 83500
+  },
+  "visao_classes": [
+    {"classe": "Renda fixa pós-fixada", "visao": "sobrepeso", "conviccao": "alta", "horizonte": "curto-médio", "racional": "Juro real ~8% a.a. com IPCA-15 surpreendendo para cima reduz espaço para cortes rápidos; carrego alto e sem marcação", "gatilho_revisao": "Selic abaixo de 11% no Focus"},
+    {"classe": "Prefixados", "visao": "neutro", "conviccao": "media", "horizonte": "médio", "racional": "Prefixado 2029 ~13,9% paga prêmio sobre Selic esperada, mas inflação corrente e eleição pressionam a marcação", "gatilho_revisao": "Resultado do 1º turno / mudança abrupta na curva"},
+    {"classe": "IPCA+ (NTN-B)", "visao": "sobrepeso", "conviccao": "alta", "horizonte": "longo", "racional": "Juro real de 7,1% a 7,6% ainda perto da máxima de 15 anos; volatilidade de marcação alta no curto prazo", "gatilho_revisao": "Queda sustentada do juro real para abaixo de 6%"},
+    {"classe": "Crédito privado", "visao": "subpeso", "conviccao": "media", "horizonte": "curto-médio", "racional": "Sem dado novo de spread; risco idiossincrático (Braskem, Raízen) segue sem compensação comprovada", "gatilho_revisao": "Normalização de spreads e fim do ciclo de rebaixamentos"},
+    {"classe": "Ações Brasil", "visao": "neutro", "conviccao": "media", "horizonte": "médio-longo", "racional": "Ibovespa recuou ~1,9% em uma semana; prêmio sobre NTN-B ainda comprimido e evento eleitoral binário à frente", "gatilho_revisao": "Definição eleitoral e CDS sustentado abaixo de 100pb"},
+    {"classe": "FIIs", "visao": "subpeso", "conviccao": "baixa", "horizonte": "médio", "racional": "IFIX estável, spread vs NTN-B comprimido, vacância de lajes em alta; visão mantida", "gatilho_revisao": "Reabertura do spread FII-NTN-B"},
+    {"classe": "Ações globais", "visao": "subpeso", "conviccao": "media", "horizonte": "curto-médio", "racional": "Treasury 10y em 5,24% e 30y em máxima desde 2002 com valuation esticada; visão mantida", "gatilho_revisao": "Correção de múltiplos ou pausa clara do Fed"},
+    {"classe": "Cripto", "visao": "neutro", "conviccao": "baixa", "horizonte": "longo", "racional": "Fluxo de ETF passou a positivo (8 dias seguidos), mas preço travado em ~US$84 mil e juros americanos em alta; visão mantida", "gatilho_revisao": "Reversão consistente de fluxo de ETF"},
+    {"classe": "Ouro/dólar (proteção)", "visao": "sobrepeso", "conviccao": "media", "horizonte": "longo", "racional": "Tese estrutural intacta, mas ouro sofre com juros reais americanos subindo; visão mantida", "gatilho_revisao": "Reversão das compras de ouro por bancos centrais"}
+  ],
+  "cenarios": [
+    {"nome": "base", "probabilidade": 0.5, "resumo": "Selic 13,25%-13,50% no fim de 2026, IPCA acima de 4,9%, câmbio R$5,15-5,35, Fed com no máximo mais uma alta, eleição com 2º turno acirrado sem ruptura"},
+    {"nome": "otimista", "probabilidade": 0.15, "resumo": "Desfecho eleitoral favorável ao fiscal, CDS abaixo de 100pb, petróleo recua com desescalada, Fed pausa e juros longos globais aliviam"},
+    {"nome": "pessimista", "probabilidade": 0.35, "resumo": "Eleição contestada ou fiscal pior, meta 2026 descumprida, Selic para de cair, câmbio acima de R$5,50, Brent acima de US$120 e Fed sobe mais de uma vez"}
+  ],
+  "riscos_principais": [
+    "Risco eleitoral concentrado (1º turno 04/10, possível 2º turno 25/10)",
+    "Deterioração fiscal (dívida/PIB 82,5%, meta 2026 sob risco)",
+    "Juros longos americanos em máxima (30y > 5,5%) e Fed com nova alta possível",
+    "Inflação brasileira surpreendendo para cima (IPCA-15 set 0,70%) e petróleo acima de US$100",
+    "Deterioração de crédito privado",
+    "Ruptura institucional pós-eleitoral (cauda)",
+    "Desmonte desordenado do carry trade do iene (cauda)"
+  ],
+  "eventos_proximos_30d": [
+    {"data": "2026-09-30", "evento": "PCE EUA (ago/26)", "impacto": "alto"},
+    {"data": "2026-10-02", "evento": "Payroll EUA (set/26)", "impacto": "alto"},
+    {"data": "2026-10-04", "evento": "Eleições Brasil - 1o turno", "impacto": "alto"},
+    {"data": "2026-10-07", "evento": "Ata do FOMC (reuniao 16/09)", "impacto": "medio"},
+    {"data": "2026-10-09", "evento": "IPCA cheio (set/26)", "impacto": "alto"},
+    {"data": "2026-10-14", "evento": "CPI EUA (set/26)", "impacto": "alto"},
+    {"data": "2026-10-14", "evento": "Vencimento de opcoes sobre Ibovespa - B3", "impacto": "baixo"},
+    {"data": "2026-10-25", "evento": "Eleições Brasil - 2o turno (se necessário)", "impacto": "alto"},
+    {"data": "2026-10-28", "evento": "Decisão do FOMC (reunião de 27-28/10)", "impacto": "alto"},
+    {"data": "2026-10-29", "evento": "Decisão do BCE", "impacto": "medio"}
+  ],
+  "mudancas_vs_anterior": [
+    "IPCA-15 de setembro surpreendeu: +0,70% no mês, 4,47% em 12m (ante 4,24% em agosto), acima de todas as estimativas (0,45%-0,66%)",
+    "Focus IPCA 2026 subiu de 4,92% para 4,99%; Selic fim de 2026 mantida em 13,50%; PIB 2026 caiu para 1,86%",
+    "Treasury 10y foi de 4,96% para 5,24% e 30y para 5,57% (máxima desde 2002); chance de alta do Fed em outubro caiu para ~45% após fala de Williams",
+    "Ibovespa recuou de 187.423 para 183.828 (-1,9%); dólar comercial subiu de R$5,14 para R$5,22",
+    "DI jan/2029 em 13,76% e jan/2031 em 13,94%: curva de juros disponível pela primeira vez no relatório",
+    "Datafolha (22-23/09): Lula 40% x Flávio Bolsonaro 36% no 1º turno; 2º turno 47% x 45%",
+    "Cúpula Xi-Trump terminou com poucos resultados concretos: trégua comercial prorrogada por apenas 2 meses",
+    "Fluxo de ETFs de Bitcoin virou positivo (8 dias seguidos, ~US$3 bi); preço segue travado em ~US$84 mil",
+    "Visões por classe mantidas; nenhum gatilho de revisão foi atingido"
+  ],
+  "lacunas_de_dados": [
+    "DI de 1 ano e 5 anos exatos (só jan/27, jan/29 e jan/31 encontrados)",
+    "TIPS 10 anos (só 5y 2,70% e 30y 3,30% encontrados)",
+    "P/L forward do Ibovespa e do S&P 500 na semana",
+    "IFIX dividend yield corrente e P/VP por segmento",
+    "PTAX de 29-30/09",
+    "IPCA de setembro e dados fiscais/atividade de agosto (ainda não divulgados ou não confirmados)",
+    "Spreads de crédito privado atualizados",
+    "CDS Brasil atualizado",
+    "CPI/PCE EUA mais recentes: PCE de agosto sai em 30/09",
+    "Fluxo estrangeiro na B3 e fluxo para EM em setembro",
+    "Número mínimo de cotistas para isenção de IR em FIIs (50 ou 100)"
+  ]
+}
