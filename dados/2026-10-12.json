@@ -1,0 +1,72 @@
+{
+  "data_referencia": "2026-10-12",
+  "regime_mercado": "Repricing eleitoral consolidado (Ibovespa recorde de fechamento 209.067 e dólar R$4,985 em 09/10) com pesquisas de 2º turno favoráveis a Flávio Bolsonaro, mas inflação local acima do teto (IPCA 12m 4,58%, surpresa de alta em setembro) e juros longos americanos em máximas desde 2002 após alta do Fed em setembro",
+  "brasil": {
+    "selic": 13.75, "ipca_12m": 4.58, "focus_ipca_ano": 5.01, "focus_selic_fim_ano": 13.50,
+    "ntnb_longa_real": null, "di_1ano": 13.439, "di_5anos": 12.245,
+    "usdbrl": 4.985, "divida_bruta_pib": 82.5, "ibovespa": 209066.90, "ibov_pl_proj": null,
+    "ifix": null, "ifix_dy": null
+  },
+  "global": {
+    "fed_funds": 3.875, "cpi_eua_12m": 3.4, "treasury_10y": 5.24, "tips_10y": null,
+    "dxy": null, "sp500": 7811.54, "sp500_pl_fwd": null, "brent": 104.15, "ouro": 4178.29, "btc_usd": null
+  },
+  "visao_classes": [
+    {"classe": "Renda fixa pós-fixada", "visao": "sobrepeso", "conviccao": "media", "horizonte": "curto-médio", "racional": "Carrego real alto sem marcação a mercado (cálculo próprio de 05/10: CDB 110% CDI ~7,4% real líquido); IPCA acima do teto limita a aceleração de cortes", "gatilho_revisao": "Focus Selic 2026 abaixo de 13,00% ou 2º turno com sinal fiscal claro"},
+    {"classe": "Prefixados", "visao": "neutro", "conviccao": "media", "horizonte": "médio", "racional": "DI jan/2029 em 12,22% e jan/2035 em 12,37% contra Selic de 13,75%: prêmio encolheu e o 2º turno é binário", "gatilho_revisao": "Resultado do 2º turno (25/10) ou Copom de 03-04/11"},
+    {"classe": "IPCA+ (NTN-B)", "visao": "sobrepeso", "conviccao": "media", "horizonte": "longo", "racional": "Juro real longo estava em ~6,3%-6,9% em 05/10 (sem taxa nova de Tesouro Direto); DI longo caiu mais 18-21pb em 09/10, entrada mais cara", "gatilho_revisao": "Juro real longo abaixo de 6% ou reversão acima de 7%"},
+    {"classe": "Crédito privado", "visao": "subpeso", "conviccao": "baixa", "horizonte": "curto-médio", "racional": "Sem dado de spread; não há como afirmar que o prêmio paga o risco", "gatilho_revisao": "Dados de spread de debêntures/CRI mostrando prêmio adequado"},
+    {"classe": "Ações Brasil", "visao": "neutro", "conviccao": "baixa", "horizonte": "médio-longo", "racional": "Ibovespa +8,82% na semana (maior alta desde abril/2020) e em recorde nominal; entrada recorde de estrangeiros; boa parte do cenário político já está no preço", "gatilho_revisao": "2º turno definido com fiscal crível e P/L ainda abaixo da média, ou devolução >8% da alta"},
+    {"classe": "FIIs", "visao": "subpeso", "conviccao": "baixa", "horizonte": "médio", "racional": "Sem dado de IFIX/DY/P-VP; queda de juros ajuda, mas valuation corrente N/D", "gatilho_revisao": "DY e P/VP por segmento mostrando spread aberto vs NTN-B"},
+    {"classe": "Ações globais", "visao": "subpeso", "conviccao": "media", "horizonte": "curto-médio", "racional": "Treasury 10y em 5,24% (pico de 5,365% em 07/10) com S&P 500 em 7.811 perto da máxima; prêmio de risco ~zero (earnings yield de 18/09, antigo); real a R$4,985 reduz retorno em BRL", "gatilho_revisao": "Treasury 10y abaixo de 4,8% ou correção de múltiplos"},
+    {"classe": "Cripto", "visao": "neutro", "conviccao": "baixa", "horizonte": "longo", "racional": "Sem preço novo confirmado (último: ~US$87 mil em 05/10); ~31% abaixo do topo de out/2025; sem confirmação de fluxo", "gatilho_revisao": "Fluxo de ETF consistente com preço acima de US$90 mil"},
+    {"classe": "Ouro/dólar (proteção)", "visao": "sobrepeso", "conviccao": "baixa", "horizonte": "longo", "racional": "Ouro ~US$4.178 (08/10) pressionado por juro real americano alto; dólar a R$4,985 barateou a proteção, mas o 2º turno pode devolver", "gatilho_revisao": "Dólar acima de R$5,40 ou queda do ouro com BCs vendendo"}
+  ],
+  "cenarios": [
+    {"nome": "base", "probabilidade": 0.45, "resumo": "2º turno sem ruptura e sinalização fiscal razoável; juros longos entre as mínimas de 05/10 e os níveis de setembro; Selic 13,25%-13,50% no fim de 2026; IPCA ~5%; câmbio R$4,90-5,30; Fed mantém ou sobe uma vez"},
+    {"nome": "otimista", "probabilidade": 0.33, "resumo": "Vitória clara com fiscal crível, fluxo estrangeiro forte, cortes aceleram em 2027, câmbio abaixo de R$5, Fed pausa e Treasury alivia"},
+    {"nome": "pessimista", "probabilidade": 0.22, "resumo": "Reversão ou contestação no 2º turno, Treasury 30y acima de 6%, IPCA persistente e petróleo alto; devolução da alta da semana e câmbio acima de R$5,40"}
+  ],
+  "riscos_principais": [
+    "2º turno em 25/10: resultado binário após repricing de ~9% na semana (pesquisas erraram a direção no 1º turno)",
+    "Inflação local acima do teto e acelerando (IPCA 12m 4,58%; núcleos e serviços em alta) limita os cortes do Copom",
+    "Juros longos americanos em máximas desde 2002 (10y 5,365% e 30y 5,73% em 07/10) e Fed que já subiu em setembro",
+    "Euforia e posicionamento: Ibovespa e dólar em extremos após uma semana excepcional",
+    "Petróleo acima de US$100 (Brent ~US$104) pressionando inflação",
+    "Ruptura institucional pós-eleitoral (cauda)",
+    "Desmonte do carry trade do iene (cauda)"
+  ],
+  "eventos_proximos_30d": [
+    {"data": "2026-10-13", "evento": "Boletim Focus (B3 fechada em 12/10 por feriado)", "impacto": "medio"},
+    {"data": "2026-10-14", "evento": "CPI EUA (set/26), expectativa 3,6%-3,7% em 12m", "impacto": "alto"},
+    {"data": "2026-10-15", "evento": "PMC de agosto (IBGE) e vendas no varejo EUA", "impacto": "medio"},
+    {"data": "2026-10-16", "evento": "IBC-Br de agosto (BCB)", "impacto": "medio"},
+    {"data": "2026-10-25", "evento": "Eleições Brasil - 2º turno", "impacto": "alto"},
+    {"data": "2026-10-28", "evento": "Decisão do FOMC (reunião de 27-28/10)", "impacto": "alto"},
+    {"data": "2026-10-29", "evento": "Decisão do BCE", "impacto": "medio"},
+    {"data": "2026-11-04", "evento": "Decisão do Copom (03-04/11)", "impacto": "alto"}
+  ],
+  "mudancas_vs_anterior": [
+    "IPCA de setembro: +0,82% m/m (mediana 0,73%-0,76%), 4,58% em 12m (de 4,22%), acima do teto de 4,5%; núcleos e serviços aceleraram segundo analistas",
+    "Ibovespa fechou 09/10 em 209.066,90 (recorde nominal, +8,82% na semana); dólar a R$4,985 (-4,44% na semana)",
+    "DI em 09/10: jan/27 13,439%, jan/28 12,520%, jan/31 12,245%, jan/35 12,365%; vértices longos caíram 17-21pb no dia",
+    "Pesquisas de 2º turno: Datafolha Flávio 49% x Lula 45%; Atlas/Bloomberg 51,1% x 45,7%",
+    "Fed: ata do FOMC (07/10) mostra que a alta de setembro para 3,75%-4,00% foi unânime e que a maioria vê outra alta até o fim do ano; chance de alta em 28/10 caiu para ~17% (CME via imprensa)",
+    "Treasury 10y chegou a 5,365% e 30y a 5,73% em 07/10 (máximas desde 2002); 10y em 5,24% em 09/10",
+    "S&P 500 fechou 09/10 em 7.811,54 (+1,2% na semana)",
+    "Cenários: otimista 30% -> 33%, pessimista 25% -> 22%; visões por classe mantidas"
+  ],
+  "lacunas_de_dados": [
+    "Focus de 12/10 (sai em 13/10; último disponível é o de 05/10)",
+    "Taxas do Tesouro Direto (NTN-B) de 09/10",
+    "Núcleos, serviços e difusão do IPCA de setembro (só relatos de analistas)",
+    "TIPS 10y, DXY, P/L forward do S&P 500 e do Ibovespa",
+    "IFIX, DY e P/VP",
+    "BTC de 09-11/10",
+    "Fechamento do Brent em 09/10 (só intradia)",
+    "CDS Brasil",
+    "Spreads de crédito privado",
+    "Dados fiscais e de atividade novos",
+    "Confirmação em fonte primária (TSE, BCB, IBGE, B3)"
+  ]
+}
