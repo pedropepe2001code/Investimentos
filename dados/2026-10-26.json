@@ -1,0 +1,62 @@
+{
+  "data_referencia": "2026-10-26",
+  "regime_mercado": "Choque eleitoral: reeleição de Lula (51,79% dos válidos, TSE) contra o posicionamento do mercado derrubou Ibovespa (~-14% a -17% intradia, circuit breaker) e subiu dólar (~+8% a +12%) e DI (+2 a +2,6 p.p. nos vértices) em 26/10, com inflação local acima do teto e Fed em viés de alta",
+  "brasil": {
+    "selic": 13.75, "ipca_12m": 4.58, "focus_ipca_ano": 5.22, "focus_selic_fim_ano": 13.25,
+    "ntnb_longa_real": null, "di_1ano": null, "di_5anos": null,
+    "usdbrl": 4.99, "divida_bruta_pib": 82.5, "ibovespa": 205082.56, "ibov_pl_proj": null,
+    "ifix": null, "ifix_dy": null
+  },
+  "global": {
+    "fed_funds": 3.875, "cpi_eua_12m": 3.7, "treasury_10y": 5.186, "tips_10y": null,
+    "dxy": null, "sp500": 7712.57, "sp500_pl_fwd": null, "brent": null, "ouro": null, "btc_usd": null
+  },
+  "visao_classes": [
+    {"classe": "Renda fixa pós-fixada", "visao": "sobrepeso", "conviccao": "alta", "horizonte": "curto-médio", "racional": "Choque fiscal-eleitoral reduz chance de cortes; Selic 13,75% sem marcação a mercado e com Focus de IPCA acima do teto", "gatilho_revisao": "Sinalização fiscal crível (ministro da Fazenda/âncora) com DI longo devolvendo o choque"},
+    {"classe": "Prefixados", "visao": "neutro", "conviccao": "baixa", "horizonte": "médio", "racional": "DI subiu 2-2,6 p.p. (jan/2028 14,915%, jan/2035 15,375% intradia) mas a trajetória é incerta; faca caindo, sem fechamento confirmado", "gatilho_revisao": "DI jan/2029 estabilizando por dias após Copom 04/11 e definição da equipe econômica"},
+    {"classe": "IPCA+ (NTN-B)", "visao": "sobrepeso", "conviccao": "media", "horizonte": "longo", "racional": "Juro real longo deve ter saltado (taxa N/D); entrada em parcelas, risco de marcação a mercado continua alto", "gatilho_revisao": "Taxa do dia acima de 7% (entrada mais atraente) ou piora do pessimista com Selic subindo"},
+    {"classe": "Crédito privado", "visao": "subpeso", "conviccao": "baixa", "horizonte": "curto-médio", "racional": "Sem dado de spread; choque de juros e queda de varejo/construção pressiona crédito", "gatilho_revisao": "Dados de spread de debêntures/CRI mostrando prêmio adequado"},
+    {"classe": "Ações Brasil", "visao": "neutro", "conviccao": "baixa", "horizonte": "médio-longo", "racional": "Queda intradia de ~15-17% muda o preço, mas o fiscal piorou e o fechamento é N/D; não comprar a queda de uma vez", "gatilho_revisao": "Fechamento confirmado, P/L projetado, equipe econômica definida e Copom de 04/11"},
+    {"classe": "FIIs", "visao": "subpeso", "conviccao": "baixa", "horizonte": "médio", "racional": "Juros longos muito mais altos; sem dado de IFIX/DY/P-VP", "gatilho_revisao": "DY e P/VP por segmento mostrando spread aberto vs NTN-B"},
+    {"classe": "Ações globais", "visao": "subpeso", "conviccao": "media", "horizonte": "curto-médio", "racional": "Treasury 10y ~5,2%, CPI 3,7%, Fed com viés de alta; prêmio de risco perto de zero. Para quem está em BRL, a alta do dólar amortece a queda local", "gatilho_revisao": "Treasury 10y abaixo de 4,8% ou correção de múltiplos"},
+    {"classe": "Cripto", "visao": "neutro", "conviccao": "baixa", "horizonte": "longo", "racional": "Sem preço confiável da semana", "gatilho_revisao": "Fluxo de ETF consistente com preço acima de US$90 mil"},
+    {"classe": "Ouro/dólar (proteção)", "visao": "sobrepeso", "conviccao": "baixa", "horizonte": "longo", "racional": "Dólar saltou para R$5,4-5,6 intradia; a proteção funcionou, mas entrar agora é comprar depois do choque", "gatilho_revisao": "Dólar acima de R$5,80 ou abaixo de R$5,10"}
+  ],
+  "cenarios": [
+    {"nome": "base", "probabilidade": 0.45, "resumo": "Choque parcialmente absorvido; dólar R$5,30-5,70, DI longo 14-15%, Copom de 04/11 corta 0,25 ou pausa, IPCA 2026 ~5,3%, Fed mantém ou sobe uma vez"},
+    {"nome": "otimista", "probabilidade": 0.15, "resumo": "Equipe econômica com âncora fiscal crível devolve parte do choque; dólar volta abaixo de R$5,20 e cortes retomam em 2027"},
+    {"nome": "pessimista", "probabilidade": 0.40, "resumo": "Prêmio fiscal persistente, dólar R$5,80-6,00, DI longo 15,5-16,5% (Morgan Stanley), Copom interrompe cortes ou sobe a Selic, Fed sobe, Ibovespa 130-150 mil"}
+  ],
+  "riscos_principais": [
+    "Prêmio de risco fiscal pós-eleição: DI jan/2035 de 12,745% para 15,375% intradia, dívida bruta 82,5% do PIB",
+    "Escolha do ministro da Fazenda e medidas fiscais (IFI: ~R$94 bi de promessas)",
+    "Copom de 04/11: corte de 0,25 p.p. com dólar a R$5,5 pode ser lido como leniência",
+    "Fed (FOMC 28/10) com viés de alta e Treasury 10y ~5,2%",
+    "Inflação acima do teto (Focus 2026 5,22%) e câmbio repassando preço",
+    "Petróleo alto e conflito no Oriente Médio",
+    "Liquidez e circuit breaker: volatilidade extrema e gap de preço em ações de varejo/construção (queda >40% em dez papéis)"
+  ],
+  "eventos_proximos_30d": [
+    {"data": "2026-10-26", "evento": "Boletim Focus (primeiro pós-eleição) e reação de mercado à reeleição", "impacto": "alto"},
+    {"data": "2026-10-28", "evento": "Decisão do FOMC (reunião de 27-28/10)", "impacto": "alto"},
+    {"data": "2026-10-29", "evento": "Decisão do BCE", "impacto": "medio"},
+    {"data": "2026-11-04", "evento": "Decisão do Copom (03-04/11)", "impacto": "alto"}
+  ],
+  "mudancas_vs_anterior": [
+    "2º turno (25/10): Lula reeleito com 51,79% dos válidos (TSE), contra Datafolha de 47x45 a favor de Flávio; mercado estava posicionado para a oposição",
+    "Ibovespa: sexta 23/10 fechou em 205.082,56 (+0,47%); em 26/10 caiu ~14% a ~17% intradia (171-175 mil) com circuit breaker, primeiro desde março de 2020; fechamento N/D",
+    "Dólar: sexta R$4,99; em 26/10 abriu em R$5,46 a R$5,60 (+9% a +12%); ~R$5,41-5,51 no final da manhã; fechamento N/D",
+    "DI: jan/2028 de 12,859% para 14,915% e jan/2035 de 12,745% para 15,375% (intradia, CNN Brasil)",
+    "Cenários: base 46% -> 45%, otimista 30% -> 15%, pessimista 24% -> 40%",
+    "Visão de pós-fixada sobe para convicção alta; demais visões mantidas e prefixados passam a convicção baixa"
+  ],
+  "lacunas_de_dados": [
+    "Fechamento de 26/10 (Ibovespa, dólar, DI): só intradia",
+    "Boletim Focus de 26/10",
+    "Taxas do Tesouro Direto (NTN-B, prefixado) pós-eleição",
+    "Brent, ouro, BTC, DXY, TIPS 10y, Treasury e S&P 500 pós-14/10 (S&P de 20/10: 7.712,57, fonte secundária)",
+    "P/L forward Ibovespa e S&P 500; IFIX, DY e P/VP",
+    "Spreads de crédito privado",
+    "Confirmação em fonte primária (BCB, IBGE, B3, TSE, Fed, BLS)"
+  ]
+}
