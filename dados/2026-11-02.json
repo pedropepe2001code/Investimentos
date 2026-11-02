@@ -1,0 +1,62 @@
+{
+  "data_referencia": "2026-11-02",
+  "regime_mercado": "Choque fiscal-eleitoral sem reversão: Ibovespa -18,12% na semana (167.921,80 em 30/10), dólar R$5,444 (maior alta semanal desde 2008), prefixados do Tesouro acima de 15% e IPCA+ longos de 7,3% a 7,9%; Copom de 04/11 inclinado à pausa, Fed com alta de dezembro precificada e Brent a ~US$117",
+  "brasil": {
+    "selic": 13.75, "ipca_12m": 4.58, "focus_ipca_ano": 5.19, "focus_selic_fim_ano": 13.25,
+    "ntnb_longa_real": 7.27, "di_1ano": null, "di_5anos": null,
+    "usdbrl": 5.444, "divida_bruta_pib": 82.5, "ibovespa": 167921.8, "ibov_pl_proj": null,
+    "ifix": null, "ifix_dy": null
+  },
+  "global": {
+    "fed_funds": 3.875, "cpi_eua_12m": 3.7, "treasury_10y": 4.929, "tips_10y": null,
+    "dxy": 102, "sp500": 7580.07, "sp500_pl_fwd": null, "brent": 117.6, "ouro": 3898.9, "btc_usd": 77222
+  },
+  "visao_classes": [
+    {"classe": "Renda fixa pós-fixada", "visao": "sobrepeso", "conviccao": "alta", "horizonte": "curto-médio", "racional": "Selic 13,75% sem marcação a mercado; cortes improváveis com câmbio, Brent e inflação altos; curva precifica juros acima da Selic", "gatilho_revisao": "Âncora fiscal crível com curva devolvendo o choque"},
+    {"classe": "Prefixados", "visao": "neutro", "conviccao": "baixa", "horizonte": "médio", "racional": "Prefixado 2029 14,89% e 2032 15,38% (abertura 30/10) pagam bem, mas a curva ainda não estabilizou e o Copom está pendente", "gatilho_revisao": "Curva estável por dias após o Copom de 04/11"},
+    {"classe": "IPCA+ (NTN-B)", "visao": "sobrepeso", "conviccao": "alta", "horizonte": "longo", "racional": "Gatilho de taxa acima de 7% atingido: IPCA+ 2032 7,89%, 2050 7,27% (abertura 30/10); entrar em parcelas, risco de marcação a mercado", "gatilho_revisao": "Taxa abaixo de 6,5% ou cenário pessimista confirmado"},
+    {"classe": "Crédito privado", "visao": "subpeso", "conviccao": "baixa", "horizonte": "curto-médio", "racional": "Sem dado de spread; emissores de varejo/construção pressionados; títulos públicos pagam muito", "gatilho_revisao": "Spreads de debêntures/CRI com prêmio adequado"},
+    {"classe": "Ações Brasil", "visao": "neutro", "conviccao": "baixa", "horizonte": "médio-longo", "racional": "Ibovespa 167.921,80, -18% na semana por razão fiscal; sem P/L; não comprar de uma vez", "gatilho_revisao": "P/L, equipe econômica definida e Copom de 04/11"},
+    {"classe": "FIIs", "visao": "subpeso", "conviccao": "baixa", "horizonte": "médio", "racional": "Hurdle de renda fixa subiu; sem dado de IFIX/DY/P-VP", "gatilho_revisao": "DY e P/VP mostrando spread aberto vs NTN-B"},
+    {"classe": "Ações globais", "visao": "subpeso", "conviccao": "media", "horizonte": "curto-médio", "racional": "Fed com alta de dezembro precificada (~84-85%), Treasury 10y 4,93%, prêmio de risco ~0 e Nasdaq em correção", "gatilho_revisao": "Treasury 10y abaixo de 4,8% ou correção de múltiplos"},
+    {"classe": "Cripto", "visao": "neutro", "conviccao": "baixa", "horizonte": "longo", "racional": "BTC ~US$77 mil, incidente de segurança na Binance, sem dado de fluxo de ETF", "gatilho_revisao": "Preço acima de US$90 mil com fluxo de ETF consistente"},
+    {"classe": "Ouro/dólar (proteção)", "visao": "sobrepeso", "conviccao": "baixa", "horizonte": "longo", "racional": "Dólar R$5,444 protegeu na semana; ouro caiu abaixo de US$3.900; entrar agora é comprar depois do choque", "gatilho_revisao": "Dólar acima de R$5,80 ou abaixo de R$5,10"}
+  ],
+  "cenarios": [
+    {"nome": "base", "probabilidade": 0.45, "resumo": "Choque parcialmente absorvido; Copom pausa em 04/11; dólar R$5,30-5,70; juros longos 14-15%; Ibovespa 150-185 mil; Fed mantém ou sobe uma vez"},
+    {"nome": "otimista", "probabilidade": 0.12, "resumo": "Equipe econômica com âncora fiscal crível devolve parte do choque; dólar abaixo de R$5,20; juros longos abaixo de 14%; cortes em 2027"},
+    {"nome": "pessimista", "probabilidade": 0.43, "resumo": "Prêmio fiscal persistente; dólar R$5,80-6,00; juros longos 15,5-16,5%; Copom pausa longa ou sobe; Fed sobe em dezembro; Ibovespa 130-150 mil"}
+  ],
+  "riscos_principais": [
+    "Prêmio fiscal e equipe econômica indefinida (sem anúncio até 02/11)",
+    "Copom de 04/11 e ata de 10/11 (pausa vs corte)",
+    "Fed com alta de dezembro precificada (~84-85%) e Treasury 10y ~4,9-5,0%",
+    "Inflação acima do teto: dólar R$5,44 e Brent ~US$117",
+    "Correção de tecnologia/IA nos EUA (Nasdaq -2,86% em 30/10)"
+  ],
+  "eventos_proximos_30d": [
+    {"data": "2026-11-02", "evento": "Boletim Focus (primeiro com dados pós-eleição)", "impacto": "medio"},
+    {"data": "2026-11-04", "evento": "Decisão do Copom (03-04/11)", "impacto": "alto"},
+    {"data": "2026-11-10", "evento": "Ata do Copom", "impacto": "medio"}
+  ],
+  "mudancas_vs_anterior": [
+    "Ibovespa fechou 30/10 em 167.921,80 (-18,12% na semana, pior desde março de 2020); fechamento confirmado ante o intradia de 26/10",
+    "Dólar fechou em R$5,444 (maior alta semanal desde 2008); era R$4,99 em 23/10",
+    "Tesouro (abertura 30/10): IPCA+ 2032 7,89% (de 6,72% em 23/10), IPCA+ 2050 7,27%, Prefixado 2032 15,38% (de 12,89%)",
+    "Fed manteve 3,75-4,00% (10-2, dois votos por alta); alta em dezembro ~84-85%",
+    "Copom 04/11: mercado migrou de corte para pausa (66,5% nas opções da B3)",
+    "Brent ~US$117,6; ouro ~US$3.899; BTC ~US$77 mil",
+    "Cenários: base 45% -> 45%, otimista 15% -> 12%, pessimista 40% -> 43%",
+    "IPCA+: convicção sobe de média para alta (gatilho de taxa acima de 7% atingido); demais visões mantidas"
+  ],
+  "lacunas_de_dados": [
+    "Focus de 02/11 (último: 26/10 com respostas até 23/10)",
+    "DI de fechamento por vértice (jan/2027, 2029, 2035) e taxas de fechamento do Tesouro (só abertura de 30/10; IPCA+ 2029/2035/2040 N/D)",
+    "IPCA de outubro, IPCA-15, núcleos, IGP-M; atividade, crédito, balança e fluxo estrangeiro",
+    "P/L forward Ibovespa e S&P 500; IFIX, DY e P/VP",
+    "Spreads de crédito privado",
+    "TIPS 10y, Treasury 2y/30y, DXY de fechamento, CPI núcleo, dot plot; BCE, China, Japão",
+    "Fluxo de ETFs de BTC; cobre, soja, minério",
+    "Confirmação em fonte primária (BCB, IBGE, B3, Tesouro, Fed, BLS)"
+  ]
+}
