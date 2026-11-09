@@ -1,0 +1,58 @@
+{
+  "data_referencia": "2026-11-09",
+  "regime_mercado": "Choque fiscal-eleitoral parcialmente digerido, sem âncora fiscal: Copom manteve Selic em 13,75% com tom duro (04/11, fonte única), Ibovespa 171.089,72 intradia (-19,7% da máxima de 09/10), dólar R$5,51, Fed com alta de dezembro precificada (dado de 02/11)",
+  "brasil": {
+    "selic": 13.75, "ipca_12m": 4.58, "focus_ipca_ano": 5.22, "focus_selic_fim_ano": 13.5,
+    "ntnb_longa_real": 7.27, "di_1ano": null, "di_5anos": null,
+    "usdbrl": 5.51, "divida_bruta_pib": 82.5, "ibovespa": 171089.72, "ibov_pl_proj": null,
+    "ifix": null, "ifix_dy": null
+  },
+  "global": {
+    "fed_funds": 3.875, "cpi_eua_12m": 3.7, "treasury_10y": 4.929, "tips_10y": null,
+    "dxy": 102, "sp500": 7580.07, "sp500_pl_fwd": null, "brent": 117.6, "ouro": 3898.9, "btc_usd": 77222
+  },
+  "visao_classes": [
+    {"classe": "Renda fixa pós-fixada", "visao": "sobrepeso", "conviccao": "alta", "horizonte": "curto-médio", "racional": "Selic 13,75% mantida com tom duro; sem marcação a mercado; ~7% real líquido", "gatilho_revisao": "Âncora fiscal crível com curva devolvendo o choque"},
+    {"classe": "Prefixados", "visao": "neutro", "conviccao": "baixa", "horizonte": "médio", "racional": "Último dado (30/10) ~15% paga bem, mas sem taxas novas para testar estabilização pós-Copom", "gatilho_revisao": "Curva estável por dias após o Copom, confirmada no Tesouro Direto"},
+    {"classe": "IPCA+ (NTN-B)", "visao": "sobrepeso", "conviccao": "alta", "horizonte": "longo", "racional": "Juro real 7,3%-7,9% (abertura 30/10, sem reconfirmar); entrar em parcelas, risco de marcação a mercado", "gatilho_revisao": "Taxa abaixo de 6,5% ou cenário pessimista confirmado"},
+    {"classe": "Crédito privado", "visao": "subpeso", "conviccao": "baixa", "horizonte": "curto-médio", "racional": "Sem dado de spread; títulos públicos pagam muito", "gatilho_revisao": "Spreads de debêntures/CRI com prêmio adequado"},
+    {"classe": "Ações Brasil", "visao": "neutro", "conviccao": "baixa", "horizonte": "médio-longo", "racional": "Ibovespa 171.089,72 (+1,9% desde 30/10 sem fato fiscal novo); sem P/L; não comprar de uma vez", "gatilho_revisao": "P/L, equipe econômica definida e ata do Copom"},
+    {"classe": "FIIs", "visao": "subpeso", "conviccao": "baixa", "horizonte": "médio", "racional": "Hurdle da renda fixa alto; sem dado de IFIX/DY/P-VP", "gatilho_revisao": "DY e P/VP mostrando spread aberto vs NTN-B"},
+    {"classe": "Ações globais", "visao": "subpeso", "conviccao": "media", "horizonte": "curto-médio", "racional": "Fed com alta de dezembro precificada (dado de 02/11), prêmio de risco ~0", "gatilho_revisao": "Treasury 10y abaixo de 4,8% ou correção de múltiplos"},
+    {"classe": "Cripto", "visao": "neutro", "conviccao": "baixa", "horizonte": "longo", "racional": "Sem dado novo confirmado; posição pequena", "gatilho_revisao": "Preço acima de US$90 mil com fluxo de ETF consistente"},
+    {"classe": "Ouro/dólar (proteção)", "visao": "sobrepeso", "conviccao": "baixa", "horizonte": "longo", "racional": "Dólar R$5,51; entrar agora é comprar depois do choque", "gatilho_revisao": "Dólar acima de R$5,80 ou abaixo de R$5,10"}
+  ],
+  "cenarios": [
+    {"nome": "base", "probabilidade": 0.45, "resumo": "Copom em pausa (04/11); sem âncora fiscal mas sem ruptura; dólar R$5,30-5,70; juros longos 14-15%; Ibovespa 150-185 mil"},
+    {"nome": "otimista", "probabilidade": 0.12, "resumo": "Equipe com âncora fiscal crível; dólar abaixo de R$5,20; juros longos abaixo de 14%; cortes em 2027"},
+    {"nome": "pessimista", "probabilidade": 0.43, "resumo": "Prêmio fiscal persistente; dólar R$5,80-6,00; juros longos 15,5-16,5%; Fed sobe em dezembro; Ibovespa 130-150 mil"}
+  ],
+  "riscos_principais": [
+    "Prêmio fiscal e equipe econômica indefinida",
+    "Ata do Copom (10/11) e IPCA de outubro acima do teto",
+    "Fed com alta de dezembro precificada e Treasury 10y ~4,9%",
+    "Inflação por câmbio R$5,5 e petróleo alto/Oriente Médio",
+    "Correção de tecnologia/IA nos EUA"
+  ],
+  "eventos_proximos_30d": [
+    {"data": "2026-11-10", "evento": "Ata do Copom", "impacto": "medio"},
+    {"data": "2026-11-10", "evento": "IPCA de outubro (IBGE, data aproximada)", "impacto": "alto"},
+    {"data": "2026-11-30", "evento": "Come-cotas (fim de novembro)", "impacto": "baixo"}
+  ],
+  "mudancas_vs_anterior": [
+    "Copom 04/11: Selic mantida em 13,75% com tom duro (fonte única, confirmar no BCB)",
+    "Ibovespa 171.089,72 intradia em 09/11 (+1,9% vs fechamento de 30/10)",
+    "Dólar R$5,51 intradia em 09/11 (vs R$5,444 em 30/10)",
+    "Focus 30/10: IPCA 2026 5,22%, Selic fim de 2026 13,50%, fim de 2027 12,50%",
+    "Cenários e visões por classe mantidos: nenhum gatilho de revisão atingido com dado confirmado"
+  ],
+  "lacunas_de_dados": [
+    "Taxas do Tesouro Direto e DI de 06/11 e 09/11 (último: abertura de 30/10)",
+    "Confirmação do Copom de 04/11 em fonte primária (BCB); Focus de 09/11",
+    "Payroll de outubro (06/11), CPI, Treasuries, DXY, S&P 500 e BTC pós-30/10",
+    "IPCA de outubro, núcleos, atividade, crédito, balança, fluxo estrangeiro",
+    "P/L forward Ibovespa e S&P 500; IFIX, DY e P/VP; spreads de crédito privado",
+    "BCE, China, Japão, resultado das eleições legislativas dos EUA; cobre, soja, minério",
+    "Anúncio da equipe econômica; confirmação em fontes primárias (BCB, IBGE, B3, Tesouro, Fed, BLS)"
+  ]
+}
