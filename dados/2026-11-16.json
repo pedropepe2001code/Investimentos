@@ -1,0 +1,56 @@
+{
+  "data_referencia": "2026-11-16",
+  "regime_mercado": "Choque fiscal-eleitoral sem âncora fiscal conhecida, com pressão externa: CPI americano quente, Fed com alta de dezembro totalmente precificada e Treasury 10y ~4,99% (10/11); dados do Brasil sem atualização desde 09/11",
+  "brasil": {
+    "selic": 13.75, "ipca_12m": 4.58, "focus_ipca_ano": 5.22, "focus_selic_fim_ano": 13.5,
+    "ntnb_longa_real": 7.27, "di_1ano": null, "di_5anos": null,
+    "usdbrl": 5.51, "divida_bruta_pib": 82.5, "ibovespa": 171089.72, "ibov_pl_proj": null,
+    "ifix": null, "ifix_dy": null
+  },
+  "global": {
+    "fed_funds": 3.875, "cpi_eua_12m": null, "treasury_10y": 4.99, "tips_10y": null,
+    "dxy": null, "sp500": 7524, "sp500_pl_fwd": null, "brent": null, "ouro": 4032, "btc_usd": 73766
+  },
+  "visao_classes": [
+    {"classe": "Renda fixa pós-fixada", "visao": "sobrepeso", "conviccao": "alta", "horizonte": "curto-médio", "racional": "Selic 13,75% mantida com tom duro; sem marcação a mercado; ~7% real líquido", "gatilho_revisao": "Âncora fiscal crível com curva devolvendo o choque"},
+    {"classe": "Prefixados", "visao": "neutro", "conviccao": "baixa", "horizonte": "médio", "racional": "Último dado (30/10) ~15% paga bem, mas juros globais subindo e sem taxas novas", "gatilho_revisao": "Curva estável por dias, confirmada no Tesouro Direto"},
+    {"classe": "IPCA+ (NTN-B)", "visao": "sobrepeso", "conviccao": "alta", "horizonte": "longo", "racional": "Juro real 7,3%-7,9% (30/10, sem reconfirmar); entrar em parcelas, risco de marcação a mercado", "gatilho_revisao": "Taxa abaixo de 6,5% ou cenário pessimista confirmado"},
+    {"classe": "Crédito privado", "visao": "subpeso", "conviccao": "baixa", "horizonte": "curto-médio", "racional": "Sem dado de spread; títulos públicos pagam muito", "gatilho_revisao": "Spreads de debêntures/CRI com prêmio adequado"},
+    {"classe": "Ações Brasil", "visao": "neutro", "conviccao": "baixa", "horizonte": "médio-longo", "racional": "Sem P/L nem dados novos; sem âncora fiscal; não comprar de uma vez", "gatilho_revisao": "P/L, equipe econômica definida e ata do Copom"},
+    {"classe": "FIIs", "visao": "subpeso", "conviccao": "baixa", "horizonte": "médio", "racional": "Hurdle da renda fixa alto; sem dado de IFIX/DY/P-VP", "gatilho_revisao": "DY e P/VP mostrando spread aberto vs NTN-B"},
+    {"classe": "Ações globais", "visao": "subpeso", "conviccao": "media", "horizonte": "curto-médio", "racional": "10y ~4,99%, CPI quente e alta de dezembro precificada; prêmio de risco ~0", "gatilho_revisao": "Treasury 10y abaixo de 4,8% ou correção de múltiplos"},
+    {"classe": "Cripto", "visao": "neutro", "conviccao": "baixa", "horizonte": "longo", "racional": "BTC ~US$73,8 mil, fraco; posição pequena", "gatilho_revisao": "Preço acima de US$90 mil com fluxo de ETF consistente"},
+    {"classe": "Ouro/dólar (proteção)", "visao": "sobrepeso", "conviccao": "baixa", "horizonte": "longo", "racional": "Ouro ~US$4.032 após alta; dólar sem dado novo; entrar em parcelas", "gatilho_revisao": "Dólar acima de R$5,80 ou abaixo de R$5,10"}
+  ],
+  "cenarios": [
+    {"nome": "base", "probabilidade": 0.45, "resumo": "Copom em pausa; sem âncora fiscal mas sem ruptura; dólar R$5,30-5,70; juros longos 14-15%; Fed sobe em dezembro; Ibovespa 150-185 mil"},
+    {"nome": "otimista", "probabilidade": 0.12, "resumo": "Equipe com âncora fiscal crível; dólar abaixo de R$5,20; juros longos abaixo de 14%; cortes em 2027"},
+    {"nome": "pessimista", "probabilidade": 0.43, "resumo": "Prêmio fiscal persistente e juros americanos altos; dólar R$5,80-6,00; juros longos 15,5-16,5%; Ibovespa 130-150 mil"}
+  ],
+  "riscos_principais": [
+    "Prêmio fiscal e equipe econômica indefinida",
+    "Juros americanos: Treasury 10y ~5%, CPI quente, leilão fraco",
+    "Inflação brasileira acima do teto (serviços)",
+    "Petróleo/Oriente Médio e câmbio",
+    "Correção de tecnologia/IA nos EUA"
+  ],
+  "eventos_proximos_30d": [
+    {"data": "2026-11-30", "evento": "Come-cotas (fim de novembro)", "impacto": "baixo"},
+    {"data": "2026-12-09", "evento": "Copom (08-09/12)", "impacto": "alto"}
+  ],
+  "mudancas_vs_anterior": [
+    "CPI americano acima do esperado (10/11); Treasury 10y ~4,99%; alta de dezembro do Fed totalmente precificada (fontes secundárias)",
+    "BTC ~US$73,8 mil (10/11); ouro ~US$4.032 (10/11)",
+    "IPCA-15 de outubro 0,32% (4,62% 12m), abaixo do consenso",
+    "Brent de 117,6 do relatório anterior marcado como suspeito (N/D)",
+    "Visões por classe e cenários mantidos: nenhum gatilho de revisão atingido com dado confirmado"
+  ],
+  "lacunas_de_dados": [
+    "Ata do Copom (10/11), IPCA de outubro (12/11), Focus de 06/11 e 13/11",
+    "Ibovespa, USD/BRL, DI e Tesouro Direto após 09/11",
+    "Valor do CPI americano, payroll, DXY, TIPS, Brent",
+    "P/L forward Ibovespa e S&P 500; IFIX, DY e P/VP; spreads de crédito privado",
+    "BCE, China, Japão; cobre, soja, minério",
+    "Anúncio da equipe econômica; confirmação em fontes primárias (BCB, IBGE, B3, Tesouro, Fed, BLS)"
+  ]
+}
